@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/moviesStyles.css">
+  <title>Detalle de peliculas</title>
+</head>
+
+<body>
+  <div class="bodyContainer">
+    <a href="/movies" class="volver"> Inicio </a>
+    <h1><%= result.title %></h1>
+
+    <ul>Duracion: <%= result.length %> minutos </ul>
+    <ul>Premios: <%= result.awards %> </ul>
+    <ul>Fecha de estreno: <%= result.releaseDate%> </ul>
+    <ul>Rating: <%= result.rating %> </ul>
+    <div class="botones">
+      <button class="boton" type="submit">Borrar</button>
+      <button class="boton" type="submit">Modificar</button>
+    </div>
+  </div>
+</body>
+
+
+</html>

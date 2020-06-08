@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/moviesStyles.css">
+  <title> Peliculas </title>
+</head>
+
+<body>
+  <div class="bodyContainer">
+    <h1>LISTADO DE PELICULAS</h1>
+    <form class="form-container" action="/movies/search" method="POST">
+      <input class="buscador" type="text" name="buscador" placeholder="Buscador">
+      <select class="filtro" name="filtrar">
+        <option value="length">Length</option>
+        <option value="awards">Awards</option>
+        <option value="rating">Rating</option>
+      </select>
+    </form>
+    <ul class="peliculasContainer">
+      <% for (let i = 0; i < result.length; i++) {  %>
+      <ul>
+        <a href="/movies/detail/<%= result[i].id %>"><%= result[i].title %></a>
+      </ul>
+
+      <% } %>
+    </ul>
+  </div>
+</body>
+
+</html>

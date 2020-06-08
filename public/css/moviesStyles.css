@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+ul, ol{
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: #3f3844;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("paper.gif");
+}
+
+ul {
+    text-align: center;
+    padding: 3px;
+}
+
+a:hover {
+    color: indigo;
+}
+
+h1 {
+    text-align: center;
+    color: #3f3844;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li{
+    margin: 10px;
+}
+
+.buscador {
+    width: 250px;
+    border: 2px solid #8e6995;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.filtro {
+    position: relative;
+    color: white;
+    top: 7px;
+    margin-left: 5px;
+    height: 25px;
+    border: 2px solid #8e6995;
+    border-radius: 10px;
+    background-color: #8e6995;
+}
+
+.bodyContainer {
+    width: 60%;
+    margin: 0 auto;
+    border: 3px solid #ece2c6  ;
+    background-color: #ece2c6  ;
+    border-radius: 15px;
+}
+
+.volver {
+    position: relative;
+    font-size: 12px;
+    padding: 15px;
+    top: 10px;  
+}
+
+.boton {
+    color: white;
+    margin-left: 5px;
+    margin-top: 15px;
+    height: 25px;
+    border: 2px solid #8e6995;
+    border-radius: 10px;
+    background-color: #8e6995;
+    margin-bottom: 25px;
+}
+
+.puntaje {
+    float: right;
+}
+
+.botones {
+    text-align: center
+}
