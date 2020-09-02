@@ -1,7 +1,7 @@
 # Movies
 
 
-1. ### `npm start`
+1. ### `npm install`
 Do this to install all the packages.
 
 2. ### `npm start`
